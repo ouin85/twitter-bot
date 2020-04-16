@@ -2,6 +2,7 @@ require 'pry'
 require 'dotenv'  # Appelle la gem Dotenv
 require 'twitter' # ligne très importante qui appelle la gem
 require_relative 'lib/twitter_bot'
+require_relative 'lib/handles'
 
 # --- Test Dotenv ---
 
@@ -29,5 +30,13 @@ end
 # --- Test Twitter ---
 # puts display_credencial
 # puts twitter_login
-tweet = 'Hi world! my name is Wazo I am a twitter robot. My master says hello! stay at home and take care of yourself and your loved ones. Everything will soon work out.'
-tweet(tweet)
+# tweet = 'Hi world! my name is Wazo I am a twitter robot. My master says hello! stay at home and take care of yourself and your loved ones. Everything will soon work out.'
+# tweet(tweet)
+# puts twitter_login.user("sferik")
+# tweet = 'Hello my name is Wazo, I am a Twitter bot, my master designed me during his training in web development. He says #bonjour_monde and he thanks you for your efforts in this difficult period of coronavirus pandemic. @the_hacking_pro.'
+# tweet_to_many(tweet, 2)
+# p get_tweets_by('bonjour_monde', 25)
+follow_user_('bonjour_monde', 20)
+# twitter_login.follow(#<Twitter::User id=1250454251500945408>)
+# puts twitter_login.user('wazo')
+# twitter_login.follow("wazo")
